@@ -1,0 +1,32 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div class="backing">
+    <div text-center class="bg-top">
+      STARSHIPS
+      <div *ngIf="datos" class="datamanage">
+        <br>
+        <h5>
+          <b>Cantidad: </b> {{datos.cantidad }}</h5>
+        <br>
+      </div>
+    </div>
+
+    <div *ngIf="datos">
+      <div class="extra" *ngFor="let naves of datos.result; let i = index">
+        <div class="naves">
+          <p class="nombre">{{naves.name}} | {{naves.length}}
+            <span class="mini"> feets</span>
+          </p>
+          <p class="model">
+            <b>Model:</b> {{naves.model}}</p>
+          <p class="model">
+            <b>Man.:</b> {{naves.manufacturer}}</p>
+          <p class="model">
+            <b>HR.:</b> {{naves.hyperdrive_rating}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

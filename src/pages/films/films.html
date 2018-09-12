@@ -1,0 +1,30 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div class="backing">
+
+    <div text-center class="bg-top">
+      FILMS
+      <div *ngIf="datos" class="datamanage">
+        <br>
+        <h5>
+          <b>Cantidad: </b>{{datos.cantidad }}</h5>
+        <br>
+      </div>
+    </div>
+
+    <div *ngIf="datos">
+      <div class="extra" *ngFor="let personajes of datos.result; let i = index">
+        <div class="naves">
+          <p class="nombre">{{personajes.title}} |
+            <span class="mini"> {{personajes.director}}</span>
+          </p>
+          <p class="model" *ngFor="let caracter of personajes.characters; let in = index">
+            <b>Personaje:</b> {{caracter}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

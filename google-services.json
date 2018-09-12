@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "878666276571",
+    "firebase_url": "https://skywalker-d3fc6.firebaseio.com",
+    "project_id": "skywalker-d3fc6",
+    "storage_bucket": "skywalker-d3fc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878666276571:android:8cab73bb001a8dc1",
+        "android_client_info": {
+          "package_name": "io.ionic.starter.skywalker123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878666276571-26h3mkj7cmnf3hug842e7hkthfodemh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXQA24qJt80pR8nIIv1Q56YcJfJ7-OJPw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
