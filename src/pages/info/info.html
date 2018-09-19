@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title *ngIf="personaje">{{personaje.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="personaje">
+    <ion-list>
+      <ion-item>
+       <b>Height:</b> {{personaje.height}}
+      </ion-item>
+      <ion-item>
+       <b>Mass:</b> {{personaje.mass}}
+      </ion-item>
+      <ion-item>
+       <b>Hair Color:</b> {{personaje.hair_color}}
+      </ion-item>
+      <ion-item>
+      <b>Skin Color:</b> {{personaje.skin_color}}
+      </ion-item>
+      <ion-item>
+      <b>Eyes Color: </b>{{personaje.eye_color}}
+      </ion-item>
+      <ion-item>
+      <b>Birth Year: </b>{{personaje.birth_year}}
+      </ion-item>
+      <ion-item>
+      <b>Gender: </b>{{personaje.gender}}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
